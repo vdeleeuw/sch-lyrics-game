@@ -1,17 +1,11 @@
-export interface Track {
-  id: number
-  title: string
-  artist: string
-  url: string
-  imageUrl?: string
-}
+import type { Song } from '@/api/services/songs.service'
 
 export interface GameState {
   lyrics: string[]
   blanks: Map<number, string>
   userAnswers: Map<number, string>
   score: number
-  currentTrack: Track | null
+  currentSong: Song | null
   isLoading: boolean
   error: string | null
 }

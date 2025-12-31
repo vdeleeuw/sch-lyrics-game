@@ -8,7 +8,7 @@ export const useGameLogic = () => {
     blanks: new Map(),
     userAnswers: new Map(),
     score: 0,
-    currentTrack: null,
+    currentSong: null,
     isLoading: false,
     error: null,
   })

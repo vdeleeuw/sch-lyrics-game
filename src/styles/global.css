@@ -58,10 +58,40 @@
 }
 
 @layer base {
-  * {
-    /* @apply border-border; */
+  :root {
+    /* Thème Violet (par défaut) */
+    --theme-primary: 271 81% 56%; /* purple-600 */
+    --theme-secondary: 263 70% 50%; /* purple-700 */
+    --theme-dark: 273 91% 27%; /* purple-900 */
+    --theme-darker: 274 84% 20%; /* purple-950 */
   }
+
+  [data-theme='blue'] {
+    --theme-primary: 217 91% 60%; /* blue-500 */
+    --theme-secondary: 221 83% 53%; /* blue-600 */
+    --theme-dark: 224 76% 48%; /* blue-700 */
+    --theme-darker: 226 71% 40%; /* blue-800 */
+  }
+
+  [data-theme='green'] {
+    --theme-primary: 142 71% 45%; /* green-600 */
+    --theme-secondary: 142 76% 36%; /* green-700 */
+    --theme-dark: 143 64% 24%; /* green-800 */
+    --theme-darker: 144 61% 20%; /* green-900 */
+  }
+
+  [data-theme='orange'] {
+    --theme-primary: 25 95% 53%; /* orange-500 */
+    --theme-secondary: 21 90% 48%; /* orange-600 */
+    --theme-dark: 17 88% 40%; /* orange-700 */
+    --theme-darker: 15 79% 34%; /* orange-800 */
+  }
+
   body {
-    /* @apply bg-background text-foreground; */
+    background: transparent !important;
+  }
+
+  #root {
+    min-height: 100vh;
   }
 }
