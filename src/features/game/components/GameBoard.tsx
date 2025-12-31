@@ -54,9 +54,9 @@ export const GameBoard: React.FC = () => {
         <div className="space-y-2 text-center">
           <h1 className="flex items-center justify-center gap-3 text-5xl font-bold text-white">
             <Music className="h-12 w-12" />
-            SCH Lyrics Game
+            N'oubliez pas la punchline
           </h1>
-          <p className="text-xl text-white/70">Prépare-toi pour le Stade de France ! 🏟️</p>
+          <p className="text-xl text-white/70">Prépare-toi pour le Stade de France de SCH ! 🏟️</p>
         </div>
 
         {/* Score */}

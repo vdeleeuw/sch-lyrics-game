@@ -1,4 +1,4 @@
-import { GAME_CONSTANTS } from '@/shared/utils/constats'
+import { GAME_CONSTANTS } from '@/shared/utils/constants'
 import { useMemo } from 'react'
 
 interface UseLyricsResult {
