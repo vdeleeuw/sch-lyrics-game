@@ -1,12 +1,13 @@
 import { useEffect, useState } from 'react'
 
-export type Theme = 'violet' | 'blue' | 'green' | 'orange'
+export type Theme = 'violet' | 'blue' | 'green' | 'orange' | 'pink' | 'red'
+
+const THEME_STORAGE_KEY = 'sch-lyrics-theme'
 
 export const useTheme = () => {
   const [theme, setTheme] = useState<Theme>(() => {
     if (typeof window !== 'undefined') {
-      const savedTheme = localStorage.getItem('sch-lyrics-theme') as Theme
-      return savedTheme || 'violet'
+      return (localStorage.getItem(THEME_STORAGE_KEY) as Theme) || 'violet'
     }
     return 'violet'
   })
@@ -14,10 +15,12 @@ export const useTheme = () => {
   useEffect(() => {
     const root = document.documentElement
     root.removeAttribute('data-theme')
+
     if (theme !== 'violet') {
       root.setAttribute('data-theme', theme)
     }
-    localStorage.setItem('sch-lyrics-theme', theme)
+
+    localStorage.setItem(THEME_STORAGE_KEY, theme)
   }, [theme])
 
   return { theme, setTheme }

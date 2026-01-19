@@ -44,7 +44,8 @@ export const GameBoard: React.FC = () => {
     <div
       className="min-h-screen p-6"
       style={{
-        background: 'linear-gradient(to bottom right, hsl(var(--theme-darker)), hsl(var(--theme-dark)), hsl(var(--theme-secondary)))'
+        background:
+          'linear-gradient(to bottom right, hsl(var(--theme-darker)), hsl(var(--theme-dark)), hsl(var(--theme-secondary)))',
       }}
     >
       <ThemeSelector />

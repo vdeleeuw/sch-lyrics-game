@@ -6,8 +6,10 @@ export const ThemeSelector: React.FC = () => {
   const { theme, setTheme } = useTheme()
 
   const themes: Array<{ name: Theme; color: string; label: string }> = [
-    { name: 'violet', color: 'bg-purple-600', label: 'Violet' },
+    { name: 'pink', color: 'bg-pink-600', label: 'Rose' },
     { name: 'blue', color: 'bg-blue-600', label: 'Bleu' },
+    { name: 'violet', color: 'bg-purple-600', label: 'Violet' },
+    { name: 'red', color: 'bg-red-600', label: 'Rouge' },
     { name: 'green', color: 'bg-green-600', label: 'Vert' },
     { name: 'orange', color: 'bg-orange-600', label: 'Orange' },
   ]
@@ -20,11 +22,10 @@ export const ThemeSelector: React.FC = () => {
           <button
             key={t.name}
             onClick={() => setTheme(t.name)}
-            className={`h-8 w-8 rounded-full ${t.color} transition-all ${
-              theme === t.name
-                ? 'ring-2 ring-white ring-offset-2 ring-offset-transparent'
-                : 'opacity-70 hover:opacity-100'
-            }`}
+            className={`h-8 w-8 rounded-full ${t.color} transition-all ${theme === t.name
+              ? 'ring-2 ring-white ring-offset-2 ring-offset-transparent'
+              : 'opacity-70 hover:opacity-100'
+              }`}
             title={t.label}
             aria-label={`Thème ${t.label}`}
           />

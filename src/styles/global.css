@@ -59,32 +59,51 @@
 
 @layer base {
   :root {
-    /* Thème Violet (par défaut) */
-    --theme-primary: 271 81% 56%; /* purple-600 */
-    --theme-secondary: 263 70% 50%; /* purple-700 */
-    --theme-dark: 273 91% 27%; /* purple-900 */
-    --theme-darker: 274 84% 20%; /* purple-950 */
+    /* Thème Baddie Violet (default) */
+    --theme-primary: 280 100% 65%; /* ultra violet neon */
+    --theme-secondary: 290 90% 55%; /* magenta punch */
+    --theme-dark: 275 85% 30%; /* deep royal */
+    --theme-darker: 270 90% 15%; /* abyss */
   }
 
   [data-theme='blue'] {
-    --theme-primary: 217 91% 60%; /* blue-500 */
-    --theme-secondary: 221 83% 53%; /* blue-600 */
-    --theme-dark: 224 76% 48%; /* blue-700 */
-    --theme-darker: 226 71% 40%; /* blue-800 */
+    /* Thème Blue Ice CEO */
+    --theme-primary: 200 100% 60%; /* electric cyan */
+    --theme-secondary: 215 95% 55%; /* rich blue */
+    --theme-dark: 220 85% 35%; /* navy glow */
+    --theme-darker: 225 90% 18%; /* dark ocean */
   }
 
   [data-theme='green'] {
-    --theme-primary: 142 71% 45%; /* green-600 */
-    --theme-secondary: 142 76% 36%; /* green-700 */
-    --theme-dark: 143 64% 24%; /* green-800 */
-    --theme-darker: 144 61% 20%; /* green-900 */
+    /* Thème Toxic Rich */
+    --theme-primary: 145 100% 50%; /* radioactive green */
+    --theme-secondary: 160 90% 40%; /* emerald flex */
+    --theme-dark: 155 85% 28%; /* jungle boss */
+    --theme-darker: 160 90% 15%; /* venom */
   }
 
   [data-theme='orange'] {
-    --theme-primary: 25 95% 53%; /* orange-500 */
-    --theme-secondary: 21 90% 48%; /* orange-600 */
-    --theme-dark: 17 88% 40%; /* orange-700 */
-    --theme-darker: 15 79% 34%; /* orange-800 */
+    /* Thème Main Character Energy */
+    --theme-primary: 18 100% 60%; /* hot lava */
+    --theme-secondary: 10 95% 55%; /* blood orange */
+    --theme-dark: 5 85% 38%; /* burnt rage */
+    --theme-darker: 0 90% 20%; /* villain arc */
+  }
+
+  [data-theme='pink'] {
+    /* Thème Baddie Pink */
+    --theme-primary: 330 100% 65%; /* hot pink */
+    --theme-secondary: 340 95% 55%; /* barbiecore */
+    --theme-dark: 335 80% 35%; /* mean girl */
+    --theme-darker: 330 90% 18%; /* lipstick stain */
+  }
+
+  [data-theme='red'] {
+    /* Thème Final Boss */
+    --theme-primary: 0 100% 60%; /* rage red */
+    --theme-secondary: 350 95% 55%; /* crimson */
+    --theme-dark: 0 85% 35%; /* blood mode */
+    --theme-darker: 0 90% 18%; /* game over */
   }
 
   body {
